@@ -1,5 +1,44 @@
 {
+  "name": "vladislav_ryabichenko",
+  "version": "1.0.0",
+  "description": "phaser game",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --config webpack/prod.js ",
+    "start": "webpack-dev-server --config webpack/base.js --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VladislavRyabichenko/phaser-game-project"
+  },
+  "keywords": ["JS", "Phaser"],
+  "author": "Vladislav Ryabichenko",
+  "homepage": "https://github.com/VladislavRyabichenko",
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "babel-core": "^6.26.3",
+
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "file-loader": "^6.0.0",
+
+    "raw-loader": "^4.0.1",
+    "regenerator": "^0.14.5",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
   "dependencies": {
-    "phaser": "^3.55.2"
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "node-fetch": "^2.6.1",
+    "phaser": "^3.23.0",
+    "phaser3-rex-plugins": "^1.1.19",
+    "regenerator-runtime": "^0.13.5",
+    "terser-webpack-plugin": "^3.0.6",
+    "webpack": "^4.43.0",
+    "webpack-merge": "^4.2.2"
   }
 }
